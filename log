@@ -67,3 +67,8 @@ list.c:76:6: note: declared here
 cc1.exe: all warnings being treated as errors
 Compilation failed
 5ebc7b8
+vi., 18 de mar. de 2022 15:17:18: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+51ad7a1
