@@ -134,3 +134,9 @@ list.c:122:32: error: expected identifier before '=' token
                                 ^
 Compilation failed
 3f7da10
+sá., 19 de mar. de 2022 19:38:09: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+5d234fe
