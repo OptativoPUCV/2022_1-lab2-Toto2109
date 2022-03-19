@@ -143,6 +143,7 @@ void * popCurrent(List * list) {
         list -> head = NULL;
         list -> current = NULL;
         list -> tail = NULL;
+        printf("alo");
         return auxNode -> data;
     }
 
