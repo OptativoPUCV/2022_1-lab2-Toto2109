@@ -144,8 +144,14 @@ void * popCurrent(List * list) {
         list -> current = NULL;
         list -> tail = NULL;
         return auxNode -> data;
-        
+    }
 
+    if( list -> tail == list -> current){
+        Node *auxNode = createNode(list -> current -> data);
+        list -> tail = list -> current -> prev;
+        list -> current = list -> head;
+        list -> current -> prev -> next = NULL;
+        return auxNode -> data;
     }
     return NULL;
 }
