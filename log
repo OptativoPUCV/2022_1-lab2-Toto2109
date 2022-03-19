@@ -172,3 +172,23 @@ list.c:144:16: error: return makes pointer from integer without a cast [-Werror=
 cc1.exe: all warnings being treated as errors
 Compilation failed
 766ef4e
+sá., 19 de mar. de 2022 19:50:16: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:142:14: error: variable or field 'aux' declared void
+         void aux = *(list -> current -> data);
+              ^~~
+list.c:142:20: error: dereferencing 'void *' pointer [-Werror]
+         void aux = *(list -> current -> data);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+list.c:142:20: error: void value not ignored as it ought to be
+         void aux = *(list -> current -> data);
+                    ^
+list.c:144:16: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return aux;
+                ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+d99d109
