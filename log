@@ -140,3 +140,35 @@ sá., 19 de mar. de 2022 19:38:09:
  tests:  11|1
 total_score: 55/70
 5d234fe
+sá., 19 de mar. de 2022 19:49:24: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:139:22: error: 'return' with no value, in function returning non-void [-Werror]
+     if(list == NULL) return;
+                      ^~~~~~
+list.c:138:8: note: declared here
+ void * popCurrent(List * list) {
+        ^~~~~~~~~~
+list.c:140:33: error: 'return' with no value, in function returning non-void [-Werror]
+     if(list -> current == NULL) return;
+                                 ^~~~~~
+list.c:138:8: note: declared here
+ void * popCurrent(List * list) {
+        ^~~~~~~~~~
+list.c:142:14: error: variable or field 'aux' declared void
+         void aux = *(list -> current -> data);
+              ^~~
+list.c:142:20: error: dereferencing 'void *' pointer [-Werror]
+         void aux = *(list -> current -> data);
+                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+list.c:142:20: error: void value not ignored as it ought to be
+         void aux = *(list -> current -> data);
+                    ^
+list.c:144:16: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+         return aux;
+                ^~~
+cc1.exe: all warnings being treated as errors
+Compilation failed
+766ef4e

@@ -136,6 +136,14 @@ void * popBack(List * list) {
 }
 
 void * popCurrent(List * list) {
+    if(list == NULL) return;
+    if(list -> current == NULL) return;
+    if(list -> head == list -> current){
+        void aux = *(list -> current -> data);
+        free(list);
+        return aux;
+
+    }
     return NULL;
 }
 
