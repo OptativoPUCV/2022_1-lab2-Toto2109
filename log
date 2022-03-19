@@ -227,3 +227,9 @@ list.c:146:16: note: each undeclared identifier is reported only once for each f
 cc1.exe: all warnings being treated as errors
 Compilation failed
 08204c0
+sá., 19 de mar. de 2022 19:57:27: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  11|1
+total_score: 55/70
+15acab3
