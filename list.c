@@ -139,9 +139,12 @@ void * popCurrent(List * list) {
     if(list == NULL) return NULL;
     if(list -> current == NULL) return NULL;
     if(list -> head == list -> current){
-        void aux = *(list -> current -> data);
-        free(list);
-        return aux;
+        auxNode * createNode(list -> current -> data);
+        list -> head = NULL;
+        list -> current = NULL;
+        list -> tail = NULL;
+        return auxNode -> data;
+        
 
     }
     return NULL;
