@@ -256,3 +256,8 @@ sá., 19 de mar. de 2022 20:07:01:
  1 file changed, 1 insertion(+), 2 deletions(-)
  tests:  0|0
 41ca6e4
+sá., 19 de mar. de 2022 20:11:37: 
+ list.c | 8 ++++++++
+ 1 file changed, 8 insertions(+)
+ tests:  0|0
+46f39b6
