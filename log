@@ -209,3 +209,21 @@ list.c:146:16: error: 'auxNode' undeclared (first use in this function)
 list.c:146:16: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b5b5ee6
+sá., 19 de mar. de 2022 19:57:04: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function 'popCurrent':
+list.c:142:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+         Node auxNode * createNode(list -> current -> data);
+                      ^
+list.c:142:22: error: value computed is not used [-Werror=unused-value]
+         Node auxNode * createNode(list -> current -> data);
+                      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+list.c:146:16: error: 'auxNode' undeclared (first use in this function)
+         return auxNode -> data;
+                ^~~~~~~
+list.c:146:16: note: each undeclared identifier is reported only once for each function it appears in
+cc1.exe: all warnings being treated as errors
+Compilation failed
+08204c0
