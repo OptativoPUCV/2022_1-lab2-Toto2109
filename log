@@ -124,3 +124,13 @@ sá., 19 de mar. de 2022 19:33:13:
  1 file changed, 1 deletion(-)
  tests:  0|0
 e7cfce7
+sá., 19 de mar. de 2022 19:37:46: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function 'pushCurrent':
+list.c:122:32: error: expected identifier before '=' token
+     list -> current -> next -> = nuevo;
+                                ^
+Compilation failed
+3f7da10
